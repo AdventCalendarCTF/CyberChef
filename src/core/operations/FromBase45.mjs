@@ -59,7 +59,7 @@ class FromBase45 extends Operation {
             }
 
             res.push(b>>8);
-            res.push(b&255);
+            res.push(b&0xff);
 
         }
 
