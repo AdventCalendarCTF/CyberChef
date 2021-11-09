@@ -66,7 +66,9 @@ class FromBase45 extends Operation {
               res.push(b>>8);
             }
 
-            # Pushing LSB
+            /**
+            * Pushing LSB
+            */
             res.push(b&0xff);
 
         }
