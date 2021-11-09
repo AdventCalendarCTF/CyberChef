@@ -58,10 +58,11 @@ class FromBase45 extends Operation {
                 throw new OperationError(`Triplet too large: '${triple.join("")}'`);
             }
 
-            if (len(triple) > 2):
+            if (len(triple) > 2){
               # The last triple may only have 2 bytes so we push the MSB when we got 3 bytes
               # Pushing MSB
               res.push(b>>8);
+            }
 
             # Pushing LSB
             res.push(b&0xff);
