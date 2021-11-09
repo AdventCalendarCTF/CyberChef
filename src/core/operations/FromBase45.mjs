@@ -59,11 +59,11 @@ class FromBase45 extends Operation {
             }
 
             if (triple.lenght > 2) {
-              /**
-               * The last triple may only have 2 bytes so we push the MSB when we got 3 bytes
-               * Pushing MSB
-               */
-              res.push(b>>8);
+                /**
+                 * The last triple may only have 2 bytes so we push the MSB when we got 3 bytes
+                 * Pushing MSB
+                 */
+                res.push(b>>8);
             }
 
             /**
